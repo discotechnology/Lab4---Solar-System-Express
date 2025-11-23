@@ -5,8 +5,10 @@
     <%- include('partials/nav.ejs') %>
     <h2> Random NASA Fact of the Day</h2>
     <br>
-    <p><%= nasaFacts.explanation %></p>
-    <img src="<%= nasaFacts.url %>">
+    <div class="content">
+        <p><%= nasaFacts.explanation %></p>
+        <img src="<%= nasaFacts.url %>">
+    </div>
     <%- include('partials/footer.ejs') %>
 </body>
 </html>
