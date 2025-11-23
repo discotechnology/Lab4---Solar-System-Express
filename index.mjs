@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 app.get('/earth', (req, res) => {
    let planetEarth = planets.getEarth();
    console.log(planetEarth);
-   res.render('earth');
+   res.render('earth', {planetEarth});
 });
 
 
