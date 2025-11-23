@@ -7,6 +7,11 @@ app.get('/', (req, res) => {
    res.render('index');
 });
 
+app.get('/earth', (req, res) => {
+ res.render('earth')
+});
+
+
 app.listen(3000, () => {
    console.log('server started');
 });
