@@ -10,15 +10,15 @@ app.get('/', (req, res) => {
 });
 
 app.get('/earth', (req, res) => {
-   let planetEarth = planets.getEarth();
-   console.log(planetEarth);
-   res.render('earth', {planetEarth});
+   let planet = planets.getEarth();
+   console.log(planet);
+   res.render('planet', {"planet":planet, "planetName":"Earth"});
 });
 
 app.get('/mars', (req, res) => {
-   let planetMars = planets.getMars();
-   console.log(planetMars);
-   res.render('mars', {planetMars});
+   let planet = planets.getMars();
+   console.log(planet);
+   res.render('planet', {"planet":planet, "planetName":"Mars"});
 });
 
 

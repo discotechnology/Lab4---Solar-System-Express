@@ -2,8 +2,13 @@
 <html>
 <%- include('partials/head.ejs') %>
 <body>
+
     <h1>The Solar System</h1>
     <%- include('partials/nav.ejs') %>
-    <img src="/img/solar-system.jpg">
+    <h1><%=  planetName  %></h1>
+    <%=   planet.description  %>
+    <br>
+    <img src="<%=   planet.image  %>">
+
 </body>
 </html>
