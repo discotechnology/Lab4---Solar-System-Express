@@ -63,6 +63,13 @@ app.get('/neptune', (req, res) => {
    res.render('planet', {"planet":planet, "planetName":"Neptune"});
 });
 
+app.get('/nasa', async(req, res) => {
+   let url = "https://api.nasa.gov/planetary/apod?api_key=VFr6OhZeF3IdMguQTazGkKMUEAMsUnxlW83fJl0A&date=2025-11-23"
+   let response = await fetch(url);
+   let nasaFacts = await response.json();
+   res.render("nasa",{nasaFacts})
+});
+
 
 app.listen(3000, () => {
    console.log('server started');

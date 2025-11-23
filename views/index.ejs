@@ -8,8 +8,11 @@
     }
 </style>
 <body>
-    <h1>The Solar System</h1>
+    <%- include('partials/header.ejs') %>
     <%- include('partials/nav.ejs') %>
-    <img src="/img/solar-system.jpg">
+    <div class="content">
+        <img src="/img/solar-system.jpg">
+    </div>
+    <%- include('partials/footer.ejs') %>
 </body>
 </html>
